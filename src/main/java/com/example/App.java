@@ -11,10 +11,10 @@ public class App {
 
         driver.get("https://www.google.com");
 
-        System.out.println(driver.getTitle());
+        System.out.println("Title: " + driver.getTitle());
 
         try {
-            Thread.sleep(3000);
+            Thread.sleep(5000);
         } catch (Exception e) {
             e.printStackTrace();
         }

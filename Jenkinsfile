@@ -41,7 +41,7 @@ pipeline {
 
         stage('Run Selenium') {
             steps {
-                sh 'echo Selenium Maven Pipeline Running Successfully'
+                sh 'export DISPLAY=:0 && mvn exec:java -Dexec.mainClass="com.example.App"'
             }
         }
 
