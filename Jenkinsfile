@@ -39,8 +39,9 @@ pipeline {
             }
         }
 
-        stage('Run Selenium') {
+        stage('Open Google') {
             steps {
+                echo 'Google Link: https://www.google.com'
                 sh 'export DISPLAY=:0 && mvn exec:java -Dexec.mainClass="com.example.App"'
             }
         }
